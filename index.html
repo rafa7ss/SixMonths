@@ -1,31 +1,37 @@
 <html>
 <head>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class='loader' id='loader'>
-    <img />
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-3">
-        </div>
-        <div class="col-6">
-            <div id='box-timer' class='box-timer'>
-                <h2 id='timer'></h2>
-            </div>
-        </div>
-        <div class="col-3">
-        </div>
-    </div>
-  </div>
+	<div class='loader' id='loader'>
+	</div>
+	<div id='cover' class='cover trans'>
+		<div class="container">
+			<div class="row">
+				<div class="col-3">
+				</div>
+				<div class="col-6">
+					<div id='box-timer' class='box-timer'>
+						<h2 id='timer'></h2>
+						<button type='button' id='btnTrans' onclick='transicao()' class='btn btn-primary disabled'>Tô pronta!</button>
+					</div>
+				</div>
+				<div class="col-3">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id='content' class='content'>
+		<h2>Teste!</h2>
+	</div>
 </body>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
 <script>
 	
-    window.onload = loader(), configTimer();
-    
+	window.onload = loader(), configTimer();
+	// window.onload = loader(), transicao();
+	
 </script>
 </html>
