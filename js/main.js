@@ -8,9 +8,11 @@ function startTimer(duration, display) {
         horas = horas == 0 ? "00" : horas;
         minutes = minutes < 10 ? "0" + minutes : minutes;
         seconds = seconds < 10 ? "0" + seconds : seconds;
-        display.textContent = dias +" dias, "+horas + ":" + minutes + ":" + seconds;
-        if (--timer < 0) {
-            timer = duration;
+        if (--timer > 0) {
+            display.innerHTML = '<button>Tô pronta!</button>';
+            // display.textContent = dias +" dias, "+horas + ":" + minutes + ":" + seconds;
+        }else{
+            display.textContent = '<button>Tô pronta!</button>';
         }
     }, 1000);
 }
@@ -38,7 +40,7 @@ function configTimer() {
         anoN = ano + 1;
     }
 
-    var aniversario = new Date(String(mesN).padStart(2, '0')+"/05/"+String(anoN).padStart(2, '0')+" 22:14:00");
+    var aniversario = new Date(String(mesN).padStart(2, '0')+"/05/"+String(anoN).padStart(2, '0')+" 00:00:00");
     var timeDiff = Math.abs(aniversario.getTime() - hoje.getTime());
     var duration = Math.ceil(timeDiff / (1000));
     display = document.querySelector('#timer'); // selecionando o timer
@@ -47,6 +49,6 @@ function configTimer() {
 
 function loader(){
     loader = document.querySelector('#loader');
-    setTimeout(() => {loader.classList.add("trans");}, 2000);
+    setTimeout(() => {loader.classList.add("trans");}, 500);
 }
 
