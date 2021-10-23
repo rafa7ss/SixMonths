@@ -48,18 +48,18 @@ function configTimer() {
     var strHoje = strDia + '/' + strMes + '/' + ano;
     
     //Condição que confere se o dia já chegou!
-    // if(dia == 5 && mes == 11){
-    //     display.textContent = "0 dias, 00:00:00";
-    //     setTimeout(() => {document.getElementById('btnTrans').classList.remove('disabled');}, 2000);
-    //     return;
-    // }
-
-    //Condição de teste
-    if(dia == dia && mes == mes){
+    if(dia == 5 && mes == 11){
         display.textContent = "0 dias, 00:00:00";
         setTimeout(() => {document.getElementById('btnTrans').classList.remove('disabled');}, 2000);
         return;
     }
+
+    //Condição de teste
+    // if(dia == dia && mes == mes){
+    //     display.textContent = "0 dias, 00:00:00";
+    //     setTimeout(() => {document.getElementById('btnTrans').classList.remove('disabled');}, 2000);
+    //     return;
+    // }
 
     //Data do aniversário
     // var aniversario = new Date("11/05/2021 00:00:00");
