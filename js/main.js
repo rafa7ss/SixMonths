@@ -9,7 +9,7 @@ function startTimer(duration, display) {
         minutes = minutes < 10 ? "0" + minutes : minutes;
         seconds = seconds < 10 ? "0" + seconds : seconds;
         if (--timer > 0) {
-            display.innerHTML = "<button type='button' class='btn btn-primary'>Tô pronta!</button>";
+            document.getElementById('box-timer').innerHTML = "<button type='button' class='btn btn-primary'>Tô pronta!</button>";
             // display.textContent = dias +" dias, "+horas + ":" + minutes + ":" + seconds;
         }else{
             display.textContent = '<button>Tô pronta!</button>';
