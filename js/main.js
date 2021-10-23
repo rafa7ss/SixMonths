@@ -5,7 +5,7 @@ function startTimer(duration, display) {
         horas = parseInt(timer / 60 / 60 % 24, 10);
         minutes = parseInt(timer / 60 % 60, 10);
         seconds = parseInt(timer % 60, 10);
-        horas = horas == 0 ? "00" : horas;
+        horas = horas < 10 ? "0" + horas : horas;
         minutes = minutes < 10 ? "0" + minutes : minutes;
         seconds = seconds < 10 ? "0" + seconds : seconds;
         if (timer != 0) {
@@ -32,23 +32,17 @@ function configTimer() {
     var strDia = String(data.getDate()).padStart(2, '0');
     var strMes = String(data.getMonth() + 1).padStart(2, '0');
     var strHoje = strDia + '/' + strMes + '/' + ano;
-
-    if(dia < 5){
-        mesN = mes;
-    }else{
-        mesN = mes + 1;
+    if(dia == 5 && mes == 11){
         display.textContent = "0 dias, 00:00:00";
         setTimeout(() => {document.getElementById('btnTrans').classList.remove('disabled');}, 2000);
         return;
-    }
-    if(mes != 12){
-        anoN = ano;
     }else{
-        anoN = ano + 1;
+        mesN = mes;
+        anoN = ano;
     }
 
-    var aniversario = new Date(String(mesN).padStart(2, '0')+"/05/"+String(anoN).padStart(2, '0')+" 00:00:00");
-    var aniversario = new Date(String(10).padStart(2, '0')+"/23/"+String(anoN).padStart(2, '0')+" 00:22:00");
+    var aniversario = new Date("11/05/2021 00:00:00");
+    // var aniversario = new Date(String(10).padStart(2, '0')+"/23/"+String(anoN).padStart(2, '0')+" 14:56:00");
     var timeDiff = Math.abs(aniversario.getTime() - hoje.getTime());
     var duration = Math.ceil(timeDiff / (1000));
     startTimer(duration, display); // iniciando o timer
@@ -59,6 +53,7 @@ function loader(){
     cover = document.querySelector('#cover');
     setTimeout(() => {cover.classList.remove("trans");}, 800);
     setTimeout(() => {loader.classList.add("trans");}, 1000);
+    setTimeout(() => {cover.classList.remove("heartbeat");}, 2000);
 }
 
 function transicao(){
