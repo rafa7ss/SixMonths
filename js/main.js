@@ -89,5 +89,5 @@ function transicao(){
     cover.classList.add("trans");
     setTimeout(() => {loader.classList.add("trans");}, 1500);
     setTimeout(() => {content.classList.add("visible");}, 1500);
-    setTimeout(() => {imagesLoader.classList.remove("heartbeat");}, 2500);
+    setTimeout(() => {imagesLoader.classList.remove("heartbeat");}, 3500);
 }
