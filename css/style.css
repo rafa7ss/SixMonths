@@ -1,3 +1,9 @@
+/* CSS Geral */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Elementos de Load */
 .loader{
 	position: fixed;
 	top: 0;
@@ -22,50 +28,51 @@
 	text-align: center;
 }
 
-.img1{
+.img1-logo{
 	position: absolute;
 	left:0;
 	right:0;
 	margin-left:auto;
 	margin-right:auto;
-	z-index: 5;
+	z-index: 3;
 }
 
-.img2{
+.img2-logo{
 	position: absolute;
 	left:0;
 	right:0;
 	margin-left:auto;
 	margin-right:auto;
+	z-index: 1;
 	transform: rotate(10deg) translate(0.5vw);
 }
 
 .heartbeat{
-  	animation: heartbeat 1.4s infinite;
+	animation: heartbeat 1.4s infinite;
 	animation-timing-function: ease;
 }
 
 @keyframes heartbeat {
-  0%
-  {
-    transform: scale( .85 );
-  }
-  20%
-  {
-    transform: scale( 1 );
-  }
-  40%
-  {
-    transform: scale( .85 );
-  }
-  60%
-  {
-    transform: scale( 1 );
-  }
-  100%
-  {
-    transform: scale( .85 );
-  }
+	0%
+	{
+		transform: scale( .85 );
+	}
+	20%
+	{
+		transform: scale( 1 );
+	}
+	40%
+	{
+		transform: scale( .85 );
+	}
+	60%
+	{
+		transform: scale( 1 );
+	}
+	100%
+	{
+		transform: scale( .85 );
+	}
 }
 
 .loader.trans{
@@ -73,6 +80,7 @@
 	visibility: hidden;
 }
 
+/* Timer */
 .box-timer{
 	width: 100%;
 	height: auto;
@@ -119,3 +127,66 @@ button.disabled{
 	visibility: hidden;
 	position: absolute;
 }
+
+/* Navbar */
+.navbar-default{
+	background-color: #852747;
+}
+
+.navbar-default a{
+	transition: all 0.5s ease;
+}
+
+.navbar-logo{
+	height: 5vh;
+}
+
+.navbar-logos:hover{
+	animation: heartbeat-2 1.4s;
+	animation-timing-function: ease;
+}
+
+@keyframes heartbeat-2 {
+	0%
+	{
+		transform: scale( 1 );
+	}
+	20%
+	{
+		transform: scale( 1.25 );
+	}
+	40%
+	{
+		transform: scale( 1 );
+	}
+	60%
+	{
+		transform: scale( 1.25 );
+	}
+	100%
+	{
+		transform: scale( 1 );
+	}
+}
+
+.navbar-logo:nth-child(2){
+	position: relative;
+	margin-left: 10px;
+}
+
+.nav-link{
+	display: inline-block;
+	color: #F5C6A5;
+}
+
+a.nav-item.nav-link:hover{
+	color: #f4aa63;
+	transform: scale(1.1);
+}
+
+/* Section Geral */
+section{
+	height: 100vh;
+}
+
+/* Section home */

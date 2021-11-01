@@ -1,5 +1,8 @@
 <html>
 <head>
+	<title>Aniversário de Namoro</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,8 +15,8 @@
 				<div class="col-6">
 					<div class='box-loader'>
 						<div id='imagesLoader' class="images-loader heartbeat">
-							<img class='img1' src="imgs/heart-pink-light.svg"/>
-							<img class='img2' src="imgs/heart-red-vivid.svg"/>
+							<img class='img1-logo' src="imgs/heart-pink-light.svg"/>
+							<img class='img2-logo' src="imgs/heart-red-vivid.svg"/>
 						</div>
 					</div>
 				</div>
@@ -39,20 +42,66 @@
 		</div>
 	</div>
 	<div id='content' class='content'>
-		<ul>
-		  <li><a class="active" href="#home">Home</a></li>
-		  <li><a href="#news">News</a></li>
-		  <li><a href="#contact">Contact</a></li>
-		  <li><a href="#about">About</a></li>
-		</ul>
+		<nav class="navbar navbar-expand-lg navbar-default">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarmobile" aria-controls="navbarmobile" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarmobile">
+				<div class="col-lg-5 order-0" align="right">
+					<a class="nav-item nav-link" href="#inicio">O Começo</a>
+      				<a class="nav-item nav-link" href="#musicas">Nossas Músicas</a>
+				</div>
+				<div class="mx-auto order-1">
+					<a class="navbar-brand navbar-logos" href="#inicio">
+						<img class='img1-logo navbar-logo' src="imgs/heart-pink-light.svg"/>
+						<img class='img2-logo navbar-logo' src="imgs/heart-red-vivid.svg"/>
+					</a>
+				</div>
+				<div class="col-lg-5 order-2">
+					<a class="nav-item nav-link" href="#livros">Livros marcantes</a>
+      				<a class="nav-item nav-link" href="#eventos">Eventos Marcantes</a>
+				</div>
+			</div>
+		</nav>
+		<section id='home'>
+			<div class="container">
+				<h2>WWF History</h2>
+				<p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>		
+			</div>
+		</section>
+		<section id='inicio'>
+			<div class="container">
+				<h2>WWF History</h2>
+				<p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>		
+			</div>
+		</section>
+		<section id='musicas'>
+			<div class="container">
+				<h2>WWF History</h2>
+				<p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>		
+			</div>
+		</section>
+		<section id='livros'>
+			<div class="container">
+				<h2>WWF History</h2>
+				<p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>		
+			</div>
+		</section>
+		<section id='eventos'>
+			<div class="container">
+				<h2>WWF History</h2>
+				<p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>		
+			</div>
+		</section>
 	</div>
 </body>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
 <script>
-	
-	window.onload = loader(), configTimer();
+
+	window.onload = loader();
 	// window.onload = loader(), transicao();
-	
+
 </script>
 </html>

@@ -58,7 +58,7 @@ function configTimer() {
     // var aniversario = new Date("11/05/2021 00:00:00");
 
     //Data de teste
-    var aniversario = new Date(String(10).padStart(2, '0')+"/"+dia+"/"+String(ano).padStart(2, '0')+" "+hoje.getHours() + ":" + hoje.getMinutes() + ":" + (hoje.getSeconds()+5));
+    var aniversario = new Date(String(11).padStart(2, '0')+"/"+dia+"/"+String(ano).padStart(2, '0')+" "+hoje.getHours() + ":" + hoje.getMinutes() + ":" + (hoje.getSeconds()+5));
     //Tempo de diferença entra aniversário e data atual
     var timeDiff = Math.abs(aniversario.getTime() - hoje.getTime());
 
@@ -71,23 +71,33 @@ function configTimer() {
 
 //Faz a transição entre o Loader e o Timer
 function loader(){
-    loader = document.querySelector('#loader');
-    imagesLoader = document.querySelector('#imagesLoader');
-    cover = document.querySelector('#cover');
-    setTimeout(() => {cover.classList.remove("trans");}, 2000);
-    setTimeout(() => {loader.classList.add("trans");}, 2200);
-    setTimeout(() => {imagesLoader.classList.remove("heartbeat");}, 3000);
+    if(localStorage.getItem('view')){
+
+        transicao();
+
+    }else{
+
+        loader = document.querySelector('#loader');
+        imagesLoader = document.querySelector('#imagesLoader');
+        cover = document.querySelector('#cover');
+        setTimeout(() => {cover.classList.remove("trans");}, 2000);
+        setTimeout(() => {loader.classList.add("trans");}, 2200);
+        setTimeout(() => {imagesLoader.classList.remove("heartbeat");}, 3000);
+        configTimer()
+
+    }
 }
 
 //Faz a transição entre o Tiemr e o Site, com o Loader aparecendo entre os dois
 function transicao(){
+    localStorage.setItem('view', 'S');
     loader = document.querySelector('#loader');
     imagesLoader = document.querySelector('#imagesLoader');
     cover = document.querySelector('#cover');
     imagesLoader.classList.add("heartbeat");
     loader.classList.remove("trans");
     cover.classList.add("trans");
-    setTimeout(() => {loader.classList.add("trans");}, 1500);
-    setTimeout(() => {content.classList.add("visible");}, 1500);
-    setTimeout(() => {imagesLoader.classList.remove("heartbeat");}, 3500);
+    setTimeout(() => {loader.classList.add("trans");}, 2000);
+    setTimeout(() => {content.classList.add("visible");}, 2200);
+    setTimeout(() => {imagesLoader.classList.remove("heartbeat");}, 3000);
 }
