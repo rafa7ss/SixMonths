@@ -128,6 +128,10 @@ body::-webkit-scrollbar-thumb {
 	box-shadow: 15px 15px 15px #707070;
 }
 
+.box-timer h2{
+	color: #000000;
+}
+
 .cover{
 	position: fixed;
 	width: 100vw;
