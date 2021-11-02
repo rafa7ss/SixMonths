@@ -4,15 +4,40 @@ html {
 	overflow:auto;
   scroll-behavior: smooth;
 }
+
 body { 
 	height: 100%;
 }
+
 h1, h2, h3, h4, h5, h6, a{
 	color: #f5c6a5;
 }
+
 p{
 	color: #ffffff;
 }
+
+html {
+  --scrollbarBG: #CFD8DC;
+  --thumbBG: #852747;
+}
+body::-webkit-scrollbar {
+  width: 11px;
+}
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+
+
 /* Elementos de Load */
 .loader{
 	position: fixed;
@@ -208,8 +233,29 @@ section{
 }
 
 .home-background{
-	margin-top: 8vh;
-	height: 92vh;
+	margin-top: 10vh;
+	margin-bottom: 3vh;
+	height: 87vh;
+	mask-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+ 	-webkit-mask-image: linear-gradient(to bottom, rgb(255 0 0 / 74%) 0%,rgb(0 0 0) 100%);
+ 	z-index: 1;
+}
+
+.home-filter{
+  background-image:linear-gradient(to bottom, #aa305aee, #852747);
+ 	z-index: 2;
+}
+
+.home-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ 	z-index: 3;
+}
+
+.home-text h1, .home-text h3{
+	color: #ff8d3e;
 }
 
 /* Section Começo */
@@ -300,5 +346,28 @@ section{
 }
 
 .section-timeline{
-	  background-image:linear-gradient(to bottom, #f94c3b, #FF7777);
+	  background-image:linear-gradient(to bottom, #f94c3b, #852747);
+}
+
+/* Section Final */
+.wave-5 {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave-5 svg {
+    position: relative;
+    display: block;
+    width: calc(113% + 1.3px);
+    height: 70px;
+	  background-image:linear-gradient(to bottom, #852745, #b9264f);
+}
+
+.wave-5 .shape-fill {
+    fill: #852747;
+}
+
+.section-final{
+	  background-image:linear-gradient(to bottom, #b9264f, #852747);
 }
