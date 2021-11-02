@@ -1,8 +1,18 @@
 /* CSS Geral */
-html {
+html { 
+	height: 100%; 
+	overflow:auto;
   scroll-behavior: smooth;
 }
-
+body { 
+	height: 100%;
+}
+h1, h2, h3, h4, h5, h6, a{
+	color: #f5c6a5;
+}
+p{
+	color: #ffffff;
+}
 /* Elementos de Load */
 .loader{
 	position: fixed;
@@ -131,6 +141,10 @@ button.disabled{
 /* Navbar */
 .navbar-default{
 	background-color: #852747;
+	height: 8vh;
+	width: 100%;
+	transition: all 1.5s ease;
+  z-index: 10;
 }
 
 .navbar-default a{
@@ -169,14 +183,12 @@ button.disabled{
 	}
 }
 
-.navbar-logo:nth-child(2){
-	position: relative;
-	margin-left: 10px;
-}
-
 .nav-link{
 	display: inline-block;
-	color: #F5C6A5;
+}
+
+.navbar-default.fixed{
+	position: fixed;
 }
 
 a.nav-item.nav-link:hover{
@@ -185,8 +197,108 @@ a.nav-item.nav-link:hover{
 }
 
 /* Section Geral */
+
 section{
 	height: 100vh;
 }
 
 /* Section home */
+.section-home{
+	text-align: center;
+}
+
+.home-background{
+	margin-top: 8vh;
+	height: 92vh;
+}
+
+/* Section Começo */
+.wave-1 {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+	  background-image:linear-gradient(to bottom, #d02c64, #c72c57);
+}
+
+.wave-1 svg {
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 120px;
+}
+
+.wave-1 .shape-fill {
+    fill: #852747;
+}
+
+.section-comeco{
+	  background-image:linear-gradient(to bottom, #c72c57, #A52649);
+}
+
+/* Section Musicas */
+.wave-2 {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave-2 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 223.3px);
+    height: 82px;
+	  background-image:linear-gradient(to bottom, #dd003d, #f53267);
+}
+
+.wave-2 .shape-fill {
+    fill: #A52649;
+}
+
+.section-musicas{
+	  background-image:linear-gradient(to bottom, #f53267, #FF7777);
+}
+
+/* Section Livros */
+.wave-3 { 
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave-3 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 129px;
+	  background-image:linear-gradient(to bottom, #ff6060, #fc4d7d);
+}
+
+.wave-3 .shape-fill {
+    fill: #FF7777;
+}
+
+.section-livros{
+	  background-image:linear-gradient(to bottom, #fc4d7d, #FF3333);
+}
+
+/* Section Timeline */
+.wave-4 {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave-4 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 93px;
+	  background-image:linear-gradient(to bottom, #fa5547, #f94c3b);
+}
+
+.wave-4 .shape-fill {
+    fill: #FF3333;
+}
+
+.section-timeline{
+	  background-image:linear-gradient(to bottom, #f94c3b, #FF7777);
+}

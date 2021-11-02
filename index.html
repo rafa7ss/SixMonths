@@ -1,103 +1,127 @@
 <html>
 <head>
 	<title>Aniversário de Namoro</title>
+	<link rel="shortcut icon" href="imgs/logo-heart.svg" />
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/style.css">
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+	<link rel='stylesheet' href='css/bootstrap.min.css'>
+	<link rel='stylesheet' href='css/style.css'>
 </head>
 <body>
 	<div class='loader' id='loader'>
-		<div class="container">
-			<div class="row">
-				<div class="col-3">
+		<div class='container'>
+			<div class='row'>
+				<div class='col-3'>
 				</div>
-				<div class="col-6">
+				<div class='col-6'>
 					<div class='box-loader'>
-						<div id='imagesLoader' class="images-loader heartbeat">
-							<img class='img1-logo' src="imgs/heart-pink-light.svg"/>
-							<img class='img2-logo' src="imgs/heart-red-vivid.svg"/>
+						<div id='imagesLoader' class='images-loader heartbeat'>
+							<img class='img1-logo' src='imgs/heart-pink-light.svg'/>
+							<img class='img2-logo' src='imgs/heart-red-vivid.svg'/>
 						</div>
 					</div>
 				</div>
-				<div class="col-3">
+				<div class='col-3'>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div id='cover' class='cover trans'>
-		<div class="container">
-			<div class="row">
-				<div class="col-3">
+		<div class='container'>
+			<div class='row'>
+				<div class='col-3'>
 				</div>
-				<div class="col-6">
+				<div class='col-6'>
 					<div id='box-timer' class='box-timer'>
 						<h2 id='timer'></h2>
 						<button type='button' id='btnTrans' onclick='transicao()' class='btn btn-primary disabled'>Tô pronta!</button>
 					</div>
 				</div>
-				<div class="col-3">
+				<div class='col-3'>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div id='content' class='content'>
-		<nav class="navbar navbar-expand-lg navbar-default">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarmobile" aria-controls="navbarmobile" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
+		<nav class='navbar navbar-expand-lg navbar-default fixed' id='navbar'>
+			<button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarmobile' aria-controls='navbarmobile' aria-expanded='false' aria-label='Toggle navigation'>
+				<span class='navbar-toggler-icon'></span>
 			</button>
 
-			<div class="collapse navbar-collapse" id="navbarmobile">
-				<div class="col-lg-5 order-0" align="right">
-					<a class="nav-item nav-link" href="#inicio">O Começo</a>
-      				<a class="nav-item nav-link" href="#musicas">Nossas Músicas</a>
+			<div class='collapse navbar-collapse' id='navbarmobile'>
+				<div class='col-lg-5 order-0' align='right'>
+					<a class='nav-item nav-link' href='#comeco'>O Começo</a>
+      				<a class='nav-item nav-link' href='#musicas'>Nossas Músicas</a>
 				</div>
-				<div class="mx-auto order-1">
-					<a class="navbar-brand navbar-logos" href="#inicio">
-						<img class='img1-logo navbar-logo' src="imgs/heart-pink-light.svg"/>
-						<img class='img2-logo navbar-logo' src="imgs/heart-red-vivid.svg"/>
+				<div class='mx-auto order-1'>
+					<a class='navbar-brand navbar-logos' href='#home'>
+						<img class='navbar-logo' src='imgs/logo-heart.svg'/>
 					</a>
 				</div>
-				<div class="col-lg-5 order-2">
-					<a class="nav-item nav-link" href="#livros">Livros marcantes</a>
-      				<a class="nav-item nav-link" href="#eventos">Eventos Marcantes</a>
+				<div class='col-lg-5 order-2'>
+					<a class='nav-item nav-link' href='#livros'>Livros marcantes</a>
+      				<a class='nav-item nav-link' href='#timeline'>Nossa Timeline</a>
 				</div>
 			</div>
 		</nav>
-		<section id='home'>
-			<div class="container">
+		<section class='section-home' id='home'>
+			<img class='home-background' src="imgs/home.png">
+		</section>
+		<div class="wave-1" id='comeco'>
+		    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+		        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+		    </svg>
+		</div>
+		<section class='section-comeco'>
+			<div class='container'>
 				<h2>WWF History</h2>
 				<p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>		
 			</div>
 		</section>
-		<section id='inicio'>
-			<div class="container">
+		<div class="wave-2" id='musicas'>
+		    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+		        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+		    </svg>
+		</div>
+		<section class="section-musicas">
+			<div class='container'>
 				<h2>WWF History</h2>
 				<p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>		
 			</div>
 		</section>
-		<section id='musicas'>
-			<div class="container">
+		<div class="wave-3" id='livros'>
+		    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+		        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+		    </svg>
+		</div>
+		<section class="section-livros">
+			<div class='container'>
 				<h2>WWF History</h2>
 				<p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>		
 			</div>
 		</section>
-		<section id='livros'>
-			<div class="container">
+		<div class="wave-4" id='timeline'>
+		    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+		        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+		    </svg>
+		</div>
+		<section class="section-timeline">
+			<div class='container'>
 				<h2>WWF History</h2>
 				<p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>		
 			</div>
 		</section>
-		<section id='eventos'>
-			<div class="container">
+		<section class="section-final">
+			<div class='container'>
 				<h2>WWF History</h2>
 				<p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>		
 			</div>
 		</section>
+		<footer></footer>
 	</div>
 </body>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
+<script src='js/bootstrap.min.js'></script>
+<script src='js/main.js'></script>
 <script>
 
 	window.onload = loader();
