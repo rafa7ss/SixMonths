@@ -86,6 +86,8 @@ function loader(){
         configTimer()
 
     }
+
+    document.getElementById('navbarheight').value = document.getElementById('navbar').offsetHeight;
 }
 
 //Faz a transição entre o Tiemr e o Site, com o Loader aparecendo entre os dois
@@ -100,4 +102,34 @@ function transicao(){
     setTimeout(() => {loader.classList.add("trans");}, 2000);
     setTimeout(() => {content.classList.add("visible");}, 2200);
     setTimeout(() => {imagesLoader.classList.remove("heartbeat");}, 3000);
+}
+
+function resizeIframe(e){
+    sectionTimeline = document.getElementById('section-timeline').offsetHeight;
+    rowTimeline = document.getElementById('row1-timeline').offsetHeight;
+    console.log(sectionTimeline);
+    console.log(rowTimeline);
+    let height = sectionTimeline - rowTimeline - 50;
+    e.style.height = height;
+}
+
+function scrollNavbar(id){
+    if(id != ''){
+        let bodyRect = document.body.getBoundingClientRect(),
+        eRect = document.getElementById('wave-'+id).getBoundingClientRect(),
+        navbar = document.getElementById('navbarheight').value;
+        offset = eRect.top - bodyRect.top;
+        window.scrollTo(0, eRect.top - bodyRect.top - navbar);
+        if(window.innerWidth <= 992){
+            $('#navbarcollapse').toggleClass('active');
+        }
+
+        navlinks = document.querySelectorAll('.nav-link');
+        
+        navlinks.forEach((e)=>{
+            e.classList.remove("active");
+        });
+
+        document.getElementById(id).classList.add('active');
+    }
 }

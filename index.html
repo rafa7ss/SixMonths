@@ -47,19 +47,19 @@
 				<img class='navbar-logo' src='imgs/logo-heart.svg' onclick="$('#navbarcollapse').toggleClass('active')"/>
 			</div>
 
-			<div class='collapse navbar-collapse' id='navbarcollapse'>
+			<div class='navbar-collapse' id='navbarcollapse'>
 				<div class='navbar-left'>
-					<a class='nav-item nav-link' href='#comeco'>O Começo</a>
-      				<a class='nav-item nav-link' href='#musicas'>Nossas Músicas</a>
+					<div class='nav-item nav-link' id='comeco' onclick='scrollNavbar(this.id)'>O Começo</div>
+      				<div class='nav-item nav-link' id='musicas' onclick='scrollNavbar(this.id)'>Nossas Músicas</div>
       			</div>
 				<div class='navbar-middle'>
-					<a class='nav-item nav-link' href='#home'>
+					<a class='nav-item nav-link' href='#'>
 						<img class='navbar-logo' src='imgs/logo-heart.svg'/>
 					</a>
 				</div>
 				<div class='navbar-right'>
-					<a class='nav-item nav-link' href='#livros'>Livros marcantes</a>
-      				<a class='nav-item nav-link' href='#timeline'>Nossa Timeline</a>
+					<div class='nav-item nav-link' id='livros' onclick='scrollNavbar(this.id)'>Livros marcantes</div>
+      				<div class='nav-item nav-link' id='timeline' onclick='scrollNavbar(this.id)'>Nossa Timeline</div>
 				</div>
 			</div>
 		</nav>
@@ -75,7 +75,7 @@
 		</section>
 		<div class='home-filter'>
 		</div>
-		<div class='wave-1' id='comeco'>
+		<div class='wave-1' id='wave-comeco'>
 		    <svg data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'>
 		        <path d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z' class='shape-fill'></path>
 		    </svg>
@@ -83,7 +83,7 @@
 		<section class='section-comeco'>
 			<div class='container'>
 				<div class='row'>
-					<div class='col-12 col-sm-6 col-md-6'>
+					<div class='col-10 mx-auto col-sm-6 col-md-6 '>
 						<img src='imgs/comeco.png' class='img-comeco'>
 					</div>
 					<div class='col-12 col-sm-6 col-md-6'>
@@ -98,7 +98,7 @@
 				</div>
 			</div>
 		</section>
-		<div class='wave-2' id='musicas'>
+		<div class='wave-2' id='wave-musicas'>
 		    <svg data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'>
 		        <path d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z' class='shape-fill'></path>
 		    </svg>
@@ -118,7 +118,7 @@
 				</div>
 			</div>
 		</section>
-		<div class='wave-3' id='livros'>
+		<div class='wave-3' id='wave-livros'>
 		    <svg data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'>
 		        <path d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z' class='shape-fill'></path>
 		    </svg>
@@ -137,21 +137,21 @@
 				</div>
 			</div>
 		</section>
-		<div class='wave-4' id='timeline'>
+		<div class='wave-4' id='wave-timeline'>
 		    <svg data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'>
 		        <path d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z' class='shape-fill'></path>
 		    </svg>
 		</div>
-		<section class='section-timeline'>
+		<section class='section-timeline' id='section-timeline'>
 			<div class='container'>
 				<div class='row'>
-					<div class='col-12'>
+					<div class='col-12' id='row1-timeline'>
 						<h2>Nossa Timeline</h2>
 						<p>Ahhh aqui é a parte onde a gente chora kkkkk.</p>
 						<p>Aqui tem basicamente todos os eventos que a gente passou, desde o começo de tudo até hoje. Cada dia que a gente passou junto foi muito especial pra mim, então data é o que não falta kkkk,</p>
 					</div>
 					<div class='col-12'>
-						<iframe id="serviceFrameSend" src="timeline/index.html" style="width: 100%;height: 72vh;" frameborder="0"></iframe>
+						<iframe id="iframe-timeline" src="timeline/index.html" style="width: 100%;height: 72vh;" frameborder="0" onload="resizeIframe(this)"></iframe>
 					</div>
 				</div>
 			</div>
@@ -167,7 +167,7 @@
 				<p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
 			</div>
 		</section>
-		<footer></footer>
+		<footer><input id='navbarheight' value='' style='display: none;'><p>Made with ❤ by Rafael Martins!</p></footer>
 	</div>
 </body>
 <script src='js/bootstrap.min.js'></script>
