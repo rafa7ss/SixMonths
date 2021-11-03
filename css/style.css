@@ -1,11 +1,11 @@
 /* CSS Geral */
-html { 
-	height: 100%; 
+html {
+	height: 100%;
 	overflow:auto;
-  scroll-behavior: smooth;
+  	scroll-behavior: smooth;
 }
 
-body { 
+body {
 	height: 100%;
 }
 
@@ -170,10 +170,9 @@ button.disabled{
 /* Navbar */
 .navbar-default{
 	background-color: #852747;
-	height: 8vh;
 	width: 100%;
 	transition: all 1.5s ease;
-  z-index: 10;
+  	z-index: 10;
 }
 
 .navbar-default a{
@@ -183,6 +182,10 @@ button.disabled{
 .navbar-collapse{
 	background-color: #852747;
 	box-sizing: content-box;
+}
+
+.navbar-icon{
+	margin: 20px;
 }
 
 .nav-link{
@@ -208,19 +211,9 @@ button.disabled{
 	.navbar-icon{
 		display: none;
 	}
-}
-
-.navbar-toggler{
-  background-color: transparent;
-  border: 1px solid #f5c6a5;
-	transform: scale(1.5, 1.8);
-	transition: all 0.5s ease !important;
-  margin: 0 5vw;
-}
-
-.navbar-toggler:hover{
-  border: 1px solid #f4aa63;
-	transform: scale(1.8, 2.1);
+	.navbar-button{
+		display: none;
+	}
 }
 
 .navbar-middle{
@@ -232,7 +225,7 @@ button.disabled{
 }
 
 .navbar-logo{
-	height: 5vh;
+	height: 6vh;
 }
 
 .navbar-logo:hover{
@@ -267,15 +260,29 @@ button.disabled{
 	position: fixed;
 }
 
+.navbar-button{
+	width: 100px;
+	height: 100px;
+	margin-left: 3vw;
+	background: #ce2c61 no-repeat url('../imgs/menu-inside.png');
+	background-size: cover;
+	border: none;
+	border-radius: 20px;
+	box-shadow: none;
+}
+
+.navbar-button:focus{
+	outline: none;
+}
+
 a.nav-item.nav-link:hover{
 	color: #f4aa63;
 	transform: scale(1.1);
 }
 
 /* Section Geral */
-
 section{
-	height: 100vh;
+	height: auto;
 }
 
 /* Section home */
@@ -291,9 +298,22 @@ section{
 	top: 0;
 	height: 100vh;
 	width: 100%;
-  background-image:linear-gradient(to bottom, #aa305a, #852747);
-  opacity: 0.5;
+	background-image:linear-gradient(to bottom, #aa305a, #852747);
+	opacity: 0.5;
  	z-index: 2;
+}
+
+.section-home, .home-filter{
+	height: 80vh;
+}
+
+@media(max-width:  530px){
+	section{
+		height: auto;
+	}
+	.section-home, .home-filter{
+		height: 80vh;
+	}
 }
 
 .home-text{
@@ -314,7 +334,7 @@ section{
     width: 100%;
     overflow: hidden;
     line-height: 0;
-	  background-image:linear-gradient(to bottom, #d02c64, #c72c57);
+  	background-image:linear-gradient(to bottom, #d02c64, #c72c57);
 }
 
 .wave-1 svg {
@@ -359,7 +379,7 @@ section{
 }
 
 /* Section Livros */
-.wave-3 { 
+.wave-3 {
     width: 100%;
     overflow: hidden;
     line-height: 0;
