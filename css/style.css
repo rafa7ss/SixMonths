@@ -189,7 +189,7 @@ button.disabled{
 	display: inline-block;
 }
 
-@media(max-width:  992px){
+@media(max-width:  991px){
 	.navbar{
 		padding: 0px;
 	}
@@ -201,7 +201,7 @@ button.disabled{
 	}
 }
 
-@media(min-width:  991px){
+@media(min-width:  992px){
 	.navbar-collapse{
 		justify-content: center;
 	}
@@ -213,24 +213,29 @@ button.disabled{
 .navbar-toggler{
   background-color: transparent;
   border: 1px solid #f5c6a5;
-  transition: all 0.5s ease !important;
-  margin: 0 1vw;
+	transform: scale(1.5, 1.8);
+	transition: all 0.5s ease !important;
+  margin: 0 5vw;
 }
 
 .navbar-toggler:hover{
   border: 1px solid #f4aa63;
-	transform: scale(1.1);
+	transform: scale(1.8, 2.1);
 }
 
-.navbar-toggler{
-	transform: scale(0.8) !important;
+.navbar-middle{
+	text-align: center;
+}
+
+.link-logo{
+	margin: 0px;
 }
 
 .navbar-logo{
 	height: 5vh;
 }
 
-.navbar-logos:hover{
+.navbar-logo:hover{
 	animation: heartbeat-2 1.4s;
 	animation-timing-function: ease;
 }
@@ -300,7 +305,8 @@ section{
 }
 
 .home-text h1, .home-text h3{
-	color: #fe2e2e;
+	color: #f5c6a5;
+	text-shadow: 3px 1px 1px #852747;
 }
 
 /* Section Começo */
@@ -323,6 +329,10 @@ section{
 
 .section-comeco{
 	  background-image:linear-gradient(to bottom, #c72c57, #A52649);
+}
+
+.img-comeco{
+	width: 100%;
 }
 
 /* Section Musicas */
