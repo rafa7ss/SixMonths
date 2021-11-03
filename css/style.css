@@ -180,6 +180,52 @@ button.disabled{
 	transition: all 0.5s ease;
 }
 
+.navbar-collapse{
+	background-color: #852747;
+	box-sizing: content-box;
+}
+
+.nav-link{
+	display: inline-block;
+}
+
+@media(max-width:  992px){
+	.navbar{
+		padding: 0px;
+	}
+	.navbar-middle{
+		display: none;
+	}
+	.nav-link{
+    display: block;
+	}
+}
+
+@media(min-width:  991px){
+	.navbar-collapse{
+		justify-content: center;
+	}
+	.navbar-icon{
+		display: none;
+	}
+}
+
+.navbar-toggler{
+  background-color: transparent;
+  border: 1px solid #f5c6a5;
+  transition: all 0.5s ease !important;
+  margin: 0 1vw;
+}
+
+.navbar-toggler:hover{
+  border: 1px solid #f4aa63;
+	transform: scale(1.1);
+}
+
+.navbar-toggler{
+	transform: scale(0.8) !important;
+}
+
 .navbar-logo{
 	height: 5vh;
 }
@@ -210,10 +256,6 @@ button.disabled{
 	{
 		transform: scale( 1 );
 	}
-}
-
-.nav-link{
-	display: inline-block;
 }
 
 .navbar-default.fixed{
