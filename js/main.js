@@ -116,11 +116,13 @@ function scrollNavbar(id){
     if(id != ''){
         let bodyRect = document.body.getBoundingClientRect(),
         eRect = document.getElementById('wave-'+id).getBoundingClientRect(),
-        navbar = document.getElementById('navbarheight').value;
+        navbar = document.getElementById('navbarheight').value,
         offset = eRect.top - bodyRect.top;
+
         window.scrollTo(0, eRect.top - bodyRect.top - navbar);
         if(window.innerWidth <= 992){
             $('#navbarcollapse').toggleClass('active');
+            $('#content-filter').toggle('display');
         }
 
         navlinks = document.querySelectorAll('.nav-link');
@@ -134,12 +136,16 @@ function scrollNavbar(id){
 }
 
 function menuclick() {
+    let navbarcollapse = document.getElementById('navbarcollapse'),
+        contentfilter = document.getElementById('content-filter');
+
     document.onclick = function(event){
-        let id_teste = 'navbar',
-        navbarcollapse = document.getElementById('navbarcollapse');
+        let id_teste = 'navbar';
 
         if(event.target.id == 'content-filter' && navbarcollapse.classList.contains('active')){
-            navbarcollapse.classList.remove('active');
+            navbarcollapse.classList.toggle('active');
+            $('#content-filter').toggle('display');
         } 
     }
+
 }
