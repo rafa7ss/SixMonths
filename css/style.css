@@ -235,6 +235,7 @@ button.disabled{
 .navbar-logo:hover, .navbar-logo:focus{
 	animation: heartbeat-2 1.4s;
 	animation-timing-function: ease;
+	cursor: pointer;
 }
 
 @keyframes heartbeat-2 {
