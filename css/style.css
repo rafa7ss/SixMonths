@@ -358,14 +358,14 @@ section{
 @media(max-width:  530px){
 	section{
 		height: auto;
-		padding: 5vh 0;
+		padding: 2vh 0 0 0;
 	}
 	.col-12{
 		padding-top: 2.5vh;
 		padding-bottom: 2.5vh;
 	}
 	.section-home, .home-filter{
-		height: 80vh;
+		height: 90vh;
 	}
 }
 
@@ -475,7 +475,36 @@ section{
 
 .section-final{
 	  background-image:linear-gradient(to bottom, #f94c3b, #852747);
-	  height: calc(80vh - 93px - 72px);
+	  height: auto;
+	  padding-bottom: 4vh;
+}
+
+.video-mensagem{
+	margin:  4vh 0 0 0;
+}
+
+@media(max-width:  531px){
+	.home-title h1{
+		font-size: 2rem;
+	}
+	.home-subtitle h3{
+		font-size: 1.50rem;
+	}
+	.home-subtitle img{
+		width: 100vw;
+	}
+	.wave-1 svg {
+	    height: 70px;
+	}
+	.wave-3 svg {
+	    height: 30px;
+	}
+	.wave-4 svg {
+	    height: 70px;
+	}
+	.section-final{
+		  height: calc(100vh - 70px - 87px - 60px);
+	}
 }
 
 /* Footer */

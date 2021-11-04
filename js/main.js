@@ -55,10 +55,10 @@ function configTimer() {
     }
 
     //Data do aniversário
-    // var aniversario = new Date("11/05/2021 00:00:00");
+    var aniversario = new Date("11/05/2021 00:00:00");
 
     //Data de teste
-    var aniversario = new Date(String(11).padStart(2, '0')+"/"+dia+"/"+String(ano).padStart(2, '0')+" "+hoje.getHours() + ":" + hoje.getMinutes() + ":" + (hoje.getSeconds()+5));
+    // var aniversario = new Date(String(11).padStart(2, '0')+"/"+dia+"/"+String(ano).padStart(2, '0')+" "+hoje.getHours() + ":" + hoje.getMinutes() + ":" + (hoje.getSeconds()+5));
     //Tempo de diferença entra aniversário e data atual
     var timeDiff = Math.abs(aniversario.getTime() - hoje.getTime());
 
