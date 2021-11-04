@@ -360,6 +360,10 @@ section{
 		height: auto;
 		padding: 5vh 0;
 	}
+	.col-12{
+		padding-top: 2.5vh;
+		padding-bottom: 2.5vh;
+	}
 	.section-home, .home-filter{
 		height: 80vh;
 	}

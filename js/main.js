@@ -88,6 +88,7 @@ function loader(){
     }
 
     document.getElementById('navbarheight').value = document.getElementById('navbar').offsetHeight;
+    menuclick();
 }
 
 //Faz a transição entre o Tiemr e o Site, com o Loader aparecendo entre os dois
@@ -129,5 +130,21 @@ function scrollNavbar(id){
         });
 
         document.getElementById(id).classList.add('active');
+    }
+}
+
+function menuclick() {
+    document.onclick = function(event){
+        let id_teste = 'navbar',
+        navbarcollapse = document.getElementById('navbarcollapse');
+
+        if(isNaN(id_teste)){
+              if(event.target.id == 'body' && navbarcollapse.classList.contains('active')){
+                    navbarcollapse.classList.remove('active');
+              }
+        }
+
+        console.log(event.target.id);
+        
     }
 }
