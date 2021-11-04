@@ -107,9 +107,7 @@ function transicao(){
 function resizeIframe(e){
     sectionTimeline = document.getElementById('section-timeline').offsetHeight;
     rowTimeline = document.getElementById('row1-timeline').offsetHeight;
-    console.log(sectionTimeline);
-    console.log(rowTimeline);
-    let height = sectionTimeline - rowTimeline - 50;
+    let height = sectionTimeline - rowTimeline - 20;
     e.style.height = height;
 }
 
