@@ -83,7 +83,7 @@ function loader(){
         setTimeout(() => {cover.classList.remove("trans");}, 2000);
         setTimeout(() => {loader.classList.add("trans");}, 2200);
         setTimeout(() => {imagesLoader.classList.remove("heartbeat");}, 3000);
-        configTimer()
+        configTimer();
 
     }
 
