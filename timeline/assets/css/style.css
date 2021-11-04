@@ -3,7 +3,6 @@
 html {
   --scrollbarBG: #CFD8DC;
   --thumbBG: #852747;
-  overflow-y: hidden;
 }
 
 @media(max-width:  768px){

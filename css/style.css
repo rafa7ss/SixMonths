@@ -471,7 +471,7 @@ section{
 
 .section-final{
 	  background-image:linear-gradient(to bottom, #f94c3b, #852747);
-	  height: calc(100vh - 93px - 72px);
+	  height: calc(80vh - 93px - 72px);
 }
 
 /* Footer */
