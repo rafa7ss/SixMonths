@@ -44,7 +44,7 @@
 	<div id='content' class='content'>
 		<nav class='navbar navbar-expand-lg navbar-default navbar-dark fixed' id='navbar'>
 			<div class='navbar-icon'>
-				<img class='navbar-logo' src='imgs/logo-heart.svg' onclick="$('#navbarcollapse').toggleClass('active')"/>
+				<img class='navbar-logo' id='navbar-logo' src='imgs/logo-heart.svg' onclick="$('#navbarcollapse').toggleClass('active')"/>
 			</div>
 
 			<div class='navbar-collapse' id='navbarcollapse'>
@@ -63,99 +63,99 @@
 				</div>
 			</div>
 		</nav>
-		<div id='body'>
-			<section class='section-home' id='home'>
-				<div class='home-text'>
-					<div class='home-title'>
-						<h1>Nosso Aniversário!!</h1>
-					</div>
-					<div class='home-subtitle'>
-						<h3>Much more than <img src='imgs/friends.png' /></h3>
-					</div>
-				</div>
-			</section>
-			<div class='home-filter'>
-			</div>
-			<div class='wave-1' id='wave-comeco'>
-			    <svg data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'>
-			        <path d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z' class='shape-fill'></path>
-			    </svg>
-			</div>
-			<section class='section-comeco'>
-				<div class='container'>
-					<div class='row'>
-						<div class='col-10 mx-auto col-sm-6 col-md-6 '>
-							<img src='imgs/comeco.png' class='img-comeco'>
-						</div>
-						<div class='col-12 col-sm-6 col-md-6'>
-							<h2>O Começo</h2>
-							<p>Eita glória, today is the day e eu nem percebi o tempo passando kkkkk.</p>
-							<p>Do fundo do meu coração, eu não consigo acreditar que Deus me deu a namorada mais perfeita que eu poderia ter. Não consigo nem imaginar outra pessoa melhor do que você pra estar comigo.</p>
-							<p>Mas eu não quero dizer que você é perfeita não, muito pelo contrário. Você tem sim suas falhas, mas diferente da maioria das pessoas, você se expõe pra mim e me mostra os seus pontos fracos!! E é isso que eu mais amo em você.</p>
-							<p>Claro que você e linda, inteligente, atenciosa, carinhosa e tantas outras coisas, mas o que eu mais amo em você é a sua HONESTIDADE! Não só porque é algo extremamente difícil de se ter e manter, mas também porque o meu Deus é o Deus da verdade, e você faz questão de refletir ele todo dia, não importa o quão difícil seja.</p>
-							<p>Muito obrigado por estar comigo por todo esse tempo, passando todos os momentos bons e ruins do meu lado (Eu sei que só foram 6 meses kkkk), sempre me apoiando e consolando. ❤️</p>
-							<p></p>
-						</div>
-					</div>
-				</div>
-			</section>
-			<div class='wave-2' id='wave-musicas'>
-			    <svg data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'>
-			        <path d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z' class='shape-fill'></path>
-			    </svg>
-			</div>
-			<section class='section-musicas'>
-				<div class='container'>
-					<div class='row'>
-						<div class='col-12 col-sm-6 col-md-6'>
-							<h2>Nossas Músicas</h2>
-							<p>Basicamente são todas algumas músicas que eu sei que marcaram algum momento nosso até agora!</p>
-							<p>Assim, talvez eu tenha esquecido uma ou outra sabe kkk, mas isso a gente releva né? 😅</p>
-							<p>Coloquei também algumas musicas que me fazem lembrar de você toda vez que elas tocam (Tem muitas por sinal rsrsrs).</p>
-						</div>
-						<div class='col-12 col-sm-6 col-md-6'>
-							<iframe src="https://open.spotify.com/embed/playlist/5lPNZAFr2nCxR9kmL9jPa2?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-						</div>
-					</div>
-				</div>
-			</section>
-			<div class='wave-3' id='wave-timeline'>
-			    <svg data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'>
-			        <path d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z' class='shape-fill'></path>
-			    </svg>
-			</div>
-			<section class='section-timeline' id='section-timeline'>
-				<div class='container timeline-container'>
-					<div class='row'>
-						<div class='col-12' id='row1-timeline'>
-							<h2>Nossa Timeline</h2>
-							<p>Ahhh aqui é a parte onde a gente chora kkkkk.</p>
-							<p>Aqui tem basicamente todos os eventos que a gente passou, desde o começo de tudo até hoje. Cada dia que a gente passou junto foi muito especial pra mim, então data é o que não falta kkkk,</p>
-						</div>
-						<div class='col-12'>
-							<iframe id="iframe-timeline" src="timeline/index.html" style="width: 100%;height: 72vh;" frameborder="0" onload="resizeIframe(this)"></iframe>
-						</div>
-					</div>
-				</div>
-			</section>
-			<div class='wave-4' id='wave-mensagem'>
-			    <svg data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'>
-			        <path d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z' class='shape-fill'></path>
-			    </svg>
-			</div>
-			<section class='section-final'>
-				<div class='container'>
-					<h2>A Mensagem</h2>
-					<div align="center" class="video-mensagem">
-						<video style='width: 80%;' controls>
-						  <source src="imgs/mensagem.mp4" type="video/mp4">
-						  Putz, seu dispositivo não é compatível com o player de vídeo. 😥
-						</video>
-					</div>
-				</div>
-			</section>
-			<footer><input id='navbarheight' value='' style='display: none;'><p>Made with ❤ by Rafael Martins!</p></footer>
+		<div class='content-filter' id='content-filter'>
 		</div>
+		<section class='section-home' id='home'>
+			<div class='home-text'>
+				<div class='home-title'>
+					<h1>Nosso Aniversário!!</h1>
+				</div>
+				<div class='home-subtitle'>
+					<h3>Much more than <img src='imgs/friends.png' /></h3>
+				</div>
+			</div>
+		</section>
+		<div class='home-filter'>
+		</div>
+		<div class='wave-1' id='wave-comeco'>
+		    <svg data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'>
+		        <path d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z' class='shape-fill'></path>
+		    </svg>
+		</div>
+		<section class='section-comeco'>
+			<div class='container'>
+				<div class='row'>
+					<div class='col-10 mx-auto col-sm-6 col-md-6 '>
+						<img src='imgs/comeco.png' class='img-comeco'>
+					</div>
+					<div class='col-12 col-sm-6 col-md-6'>
+						<h2>O Começo</h2>
+						<p>Eita glória, today is the day e eu nem percebi o tempo passando kkkkk.</p>
+						<p>Do fundo do meu coração, eu não consigo acreditar que Deus me deu a namorada mais perfeita que eu poderia ter. Não consigo nem imaginar outra pessoa melhor do que você pra estar comigo.</p>
+						<p>Mas eu não quero dizer que você é perfeita não, muito pelo contrário. Você tem sim suas falhas, mas diferente da maioria das pessoas, você se expõe pra mim e me mostra os seus pontos fracos!! E é isso que eu mais amo em você.</p>
+						<p>Claro que você e linda, inteligente, atenciosa, carinhosa e tantas outras coisas, mas o que eu mais amo em você é a sua HONESTIDADE! Não só porque é algo extremamente difícil de se ter e manter, mas também porque o meu Deus é o Deus da verdade, e você faz questão de refletir ele todo dia, não importa o quão difícil seja.</p>
+						<p>Muito obrigado por estar comigo por todo esse tempo, passando todos os momentos bons e ruins do meu lado (Eu sei que só foram 6 meses kkkk), sempre me apoiando e consolando. ❤️</p>
+						<p></p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class='wave-2' id='wave-musicas'>
+		    <svg data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'>
+		        <path d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z' class='shape-fill'></path>
+		    </svg>
+		</div>
+		<section class='section-musicas'>
+			<div class='container'>
+				<div class='row'>
+					<div class='col-12 col-sm-6 col-md-6'>
+						<h2>Nossas Músicas</h2>
+						<p>Basicamente são todas algumas músicas que eu sei que marcaram algum momento nosso até agora!</p>
+						<p>Assim, talvez eu tenha esquecido uma ou outra sabe kkk, mas isso a gente releva né? 😅</p>
+						<p>Coloquei também algumas musicas que me fazem lembrar de você toda vez que elas tocam (Tem muitas por sinal rsrsrs).</p>
+					</div>
+					<div class='col-12 col-sm-6 col-md-6'>
+						<iframe src="https://open.spotify.com/embed/playlist/5lPNZAFr2nCxR9kmL9jPa2?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class='wave-3' id='wave-timeline'>
+		    <svg data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'>
+		        <path d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z' class='shape-fill'></path>
+		    </svg>
+		</div>
+		<section class='section-timeline' id='section-timeline'>
+			<div class='container timeline-container'>
+				<div class='row'>
+					<div class='col-12' id='row1-timeline'>
+						<h2>Nossa Timeline</h2>
+						<p>Ahhh aqui é a parte onde a gente chora kkkkk.</p>
+						<p>Aqui tem basicamente todos os eventos que a gente passou, desde o começo de tudo até hoje. Cada dia que a gente passou junto foi muito especial pra mim, então data é o que não falta kkkk,</p>
+					</div>
+					<div class='col-12'>
+						<iframe id="iframe-timeline" src="timeline/index.html" style="width: 100%;height: 72vh;" frameborder="0" onload="resizeIframe(this)"></iframe>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class='wave-4' id='wave-mensagem'>
+		    <svg data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'>
+		        <path d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z' class='shape-fill'></path>
+		    </svg>
+		</div>
+		<section class='section-final'>
+			<div class='container'>
+				<h2>A Mensagem</h2>
+				<div align="center" class="video-mensagem">
+					<video style='width: 80%;' controls>
+					  <source src="imgs/mensagem.mp4" type="video/mp4">
+					  Putz, seu dispositivo não é compatível com o player de vídeo. 😥
+					</video>
+				</div>
+			</div>
+		</section>
+		<footer><input id='navbarheight' value='' style='display: none;'><p>Made with ❤ by Rafael Martins!</p></footer>
 	</div>
 </body>
 <script src='js/bootstrap.min.js'></script>

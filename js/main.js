@@ -138,13 +138,8 @@ function menuclick() {
         let id_teste = 'navbar',
         navbarcollapse = document.getElementById('navbarcollapse');
 
-        if(isNaN(id_teste)){
-              if(event.target.id == 'body' && navbarcollapse.classList.contains('active')){
-                    navbarcollapse.classList.remove('active');
-              }
-        }
-
-        console.log(event.target.id);
-        
+        if(event.target.id == 'content-filter' && navbarcollapse.classList.contains('active')){
+            navbarcollapse.classList.remove('active');
+        } 
     }
 }
