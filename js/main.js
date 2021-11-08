@@ -48,7 +48,7 @@ function configTimer() {
     var strHoje = strDia + '/' + strMes + '/' + ano;
     
     //Condição que confere se o dia já chegou!
-    if(dia == 5 && mes == 11){
+    if(dia == 5 && mes == 11 || mes >= 11){
         display.textContent = "0 dias, 00:00:00";
         setTimeout(() => {document.getElementById('btnTrans').classList.remove('disabled');}, 2000);
         return;
